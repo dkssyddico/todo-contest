@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/dee6d699c6.js" crossorigin="anonymous"></script>
+    <title>To do list!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="greeting-clock.js" defer></script>
+    <script src="todo.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="color.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-titie">
+          <h3 class="header-title--text">To do list</h3>
+        </div>
+      </header>
+      <main class="main">
+        <div class="date-box day">
+          <h2 class="js-date">2021 Feb 12th</h2>
+          <h3 class="js-clock">00:00:00</h3>
+        </div>
+        <div class="greetings day">
+          <h2 class="js-greeting">Hi There.</h2>
+          <h2 class="js-name">What is your name?</h2>
+          <form action="" class="js-name-form">
+            <input type="text" name="" id="" class="js-name-input" placeholder="Enter your name" />
+          </form>
+          <form action="" class="js-task-form hidden">
+            <input type="text" name="" id="" class="js-task-input" placeholder="Add a task" />
+          </form>
+          <i class="fas fa-search search-btn dayBtn"></i>
+          <div class="search hidden">
+            <div class="search-container">
+              <section class="google day">
+                <h4 class="search-title">Google</h4>
+                <div class="google-form-container">
+                  <form action="" class="js-google-form">
+                    <input type="text" class="js-google-input" />
+                  </form>
+                  <a class="google-search-btn" href="" target="_blank"
+                    ><i class="fas fa-search search-google-btn"></i
+                  ></a>
+                </div>
+              </section>
+              <section class="naver day">
+                <h4 class="search-title">naver eng dict</h4>
+                <div class="naver-form-container">
+                  <form action="" class="js-naver-form">
+                    <input type="text" class="js-naver-input" />
+                  </form>
+                  <a class="naver-search-btn" href="" target="_blank"
+                    ><i class="fas fa-search search-naver-btn"></i
+                  ></a>
+                </div>
+                <i class="fas fa-times exit-btn"></i>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="settings day">
+          <div class="settings-container">
+            <div class="settings-title">
+              <i class="fas fa-cog"></i>
+              <h3>Settings</h3>
+            </div>
+            <button class="daymode">
+              <i class="far fa-sun"></i>
+              <h4>Day mode</h4>
+            </button>
+            <button class="darkmode">
+              <i class="far fa-moon"></i>
+              <h4>Dark mode</h4>
+            </button>
+          </div>
+        </div>
+        <div class="pending day">
+          <div class="pending-header">
+            <h3>To do</h3>
+          </div>
+          <div class="pending-notice">
+            <p>There's nothing to do!</p>
+          </div>
+          <ul class="pending-list"></ul>
+        </div>
+        <div class="finished day">
+          <div class="finished-header">
+            <h3>Finished</h3>
+          </div>
+          <div class="finished-notice">
+            <p>Nothing done 😅</p>
+          </div>
+          <ul class="finished-list"></ul>
+        </div>
+      </main>
+      <footer class="footer">
+        <h4 class="footer-title">&copy; dkssyddico 2021</h4>
+      </footer>
+    </div>
+  </body>
+</html>
